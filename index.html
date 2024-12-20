@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi niño lindo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Feliz Navidad Amor</h1>
+        <p>Te amo cada día un poquito más<br>  ˗ˋˏ ♡ ˎˊ˗</p>
+    </header>
+
+    <section class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="images/foto1.jpg" alt="Momento especial 1"></div>
+            <div class="slide"><img src="images/foto2.jpg" alt="Momento especial 2"></div>
+            <div class="slide"><img src="images/foto3.jpg" alt="Momento especial 3"></div>
+            <div class="slide"><img src="images/foto4.jpg" alt="Momento especial 4"></div>
+            <div class="slide"><img src="images/foto5.jpg" alt="Momento especial 5"></div>
+            <div class="slide"><img src="images/foto6.jpg" alt="Momento especial 6"></div>
+            <div class="slide"><img src="images/foto7.jpg" alt="Momento especial 7"></div>
+            <div class="slide"><img src="images/foto8.jpg" alt="Momento especial 8"></div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <div class="interaction">
+        <button id="music-btn" onclick="toggleMusic()">Pon musiquita ♪ ༘⋆</button>
+    </div>
+    <audio id="background-music" loop>
+        <source src="audio/musica.mp3" type="audio/mp3">
+        Hubo un error pocho, avisa a Reichi.
+    </audio>
+
+    <div class="interaction">
+        <button id="love-btn" onclick="showLoveReason()">Cosas que me encantan de ti -`♡´-</button>
+    </div>
+
+    <div id="love-reason" class="love-reason">
+    </div>
+    
+    <div class="interaction">
+        <button id="laberinto-btn" ><a href="laberinto.html" >Minijueguito 👾</a></button>
+    </div>
+    
+    <div id="countdown"></div>
+
+    <div class="lightbox-container">
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="Imagen en grande" id="lightbox-img">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Con amor, de tu noviecita </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
